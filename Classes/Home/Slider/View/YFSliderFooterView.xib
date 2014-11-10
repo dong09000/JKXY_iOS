@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lis-5b-zRK" customClass="YFSliderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-Of-eBc" customClass="YFBtn">
+                    <rect key="frame" x="130" y="35" width="60" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="4UO-TG-MhP"/>
+                        <constraint firstAttribute="height" constant="80" id="FNw-rQ-CjI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="系统设置">
+                        <color key="titleColor" red="0.43112244897959184" green="0.43112244897959184" blue="0.43112244897959184" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="openSetting" destination="lis-5b-zRK" eventType="touchUpInside" id="1pP-mI-fvd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ver1.0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X63-HK-LZa">
+                    <rect key="frame" x="130" y="121" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Oqe-54-3qQ"/>
+                        <constraint firstAttribute="width" constant="60" id="ZNf-Tw-h6e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="X63-HK-LZa" secondAttribute="centerX" id="26M-mV-VyV"/>
+                <constraint firstAttribute="bottom" secondItem="X63-HK-LZa" secondAttribute="bottom" constant="8" id="5PG-gl-vAT"/>
+                <constraint firstAttribute="centerY" secondItem="BdT-Of-eBc" secondAttribute="centerY" id="hG3-9j-VQU"/>
+                <constraint firstAttribute="centerX" secondItem="BdT-Of-eBc" secondAttribute="centerX" id="okT-5K-vsd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="verLabel" destination="X63-HK-LZa" id="hCj-lB-Z9h"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="274"/>
+        </view>
+    </objects>
+</document>

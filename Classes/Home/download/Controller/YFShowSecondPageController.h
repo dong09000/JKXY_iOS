@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class YFShowSecondData;
+
 @interface YFShowSecondPageController : UIViewController
+
+@property (nonatomic, strong) YFShowSecondData *data2;
+
+@property (nonatomic, assign) CGFloat height;
 
 @end

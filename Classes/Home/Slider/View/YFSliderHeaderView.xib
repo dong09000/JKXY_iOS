@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="sliderHeaderView" id="Vnp-d1-lJy" customClass="YFSliderHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-jy-6qo">
+                    <rect key="frame" x="20" y="30" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Ecw-fQ-ZXC"/>
+                        <constraint firstAttribute="height" constant="40" id="mbC-It-tHI"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3I-6f-zZv">
+                    <rect key="frame" x="263" y="30" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="GxT-BO-lax"/>
+                        <constraint firstAttribute="height" constant="40" id="PDH-cP-Lsd"/>
+                    </constraints>
+                    <state key="normal" title="VIP">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-QE-r22" customClass="YFBtn">
+                    <rect key="frame" x="130" y="60" width="60" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="HxJ-Gr-HTP"/>
+                        <constraint firstAttribute="width" constant="60" id="jb1-zO-rlY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="立即登录">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DF7-lu-8y5">
+                    <rect key="frame" x="175" y="60" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Dom-P5-brr"/>
+                        <constraint firstAttribute="height" constant="20" id="j5s-vF-j0a"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录抢大礼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-Ur-GgQ">
+                    <rect key="frame" x="127" y="151" width="66" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0HB-0D-ffB"/>
+                        <constraint firstAttribute="width" constant="66" id="Tfj-o9-OSO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.16848703212468608" green="1" blue="0.15872689400460016" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pcn-jy-6qo" firstAttribute="leading" secondItem="Vnp-d1-lJy" secondAttribute="leading" constant="20" id="0wC-dd-R2X"/>
+                <constraint firstAttribute="centerX" secondItem="9qd-QE-r22" secondAttribute="centerX" id="9a6-dP-XgQ"/>
+                <constraint firstAttribute="trailing" secondItem="S3I-6f-zZv" secondAttribute="trailing" constant="17" id="GWL-W8-Cpp"/>
+                <constraint firstItem="S3I-6f-zZv" firstAttribute="top" secondItem="Vnp-d1-lJy" secondAttribute="top" constant="30" id="H05-nc-Wki"/>
+                <constraint firstAttribute="centerY" secondItem="9qd-QE-r22" secondAttribute="centerY" id="SWg-aa-sEz"/>
+                <constraint firstItem="Pcn-jy-6qo" firstAttribute="top" secondItem="Vnp-d1-lJy" secondAttribute="top" constant="30" id="UZY-NA-cQG"/>
+                <constraint firstAttribute="centerX" secondItem="8EO-Ur-GgQ" secondAttribute="centerX" id="XXo-bA-ECE"/>
+                <constraint firstAttribute="centerX" secondItem="DF7-lu-8y5" secondAttribute="centerX" constant="-25" id="a9t-2z-g5x"/>
+                <constraint firstAttribute="centerY" secondItem="DF7-lu-8y5" secondAttribute="centerY" constant="30" id="c4D-8c-EuF"/>
+                <constraint firstAttribute="bottom" secondItem="8EO-Ur-GgQ" secondAttribute="bottom" constant="28" id="vOF-h5-YjL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323" y="187"/>
+        </view>
+    </objects>
+</document>
